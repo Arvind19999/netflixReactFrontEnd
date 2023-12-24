@@ -1,0 +1,25 @@
+
+$bgColo : "black";
+
+.header{
+    background-color: $bgColo;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0.5rem;
+    justify-content: space-around;
+
+    >img{
+        height: 70%;
+    }
+
+    >div{
+        width: 100%;
+        border: 1px red solid;
+    }
+
+    >svg{
+        color: white;
+    }
+}
