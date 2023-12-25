@@ -1,181 +1,28 @@
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,700;0,900;1,100;1,500;1,900&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,700;0,900;1,100;1,500;1,900&display=swap');
 
-        * {
-            margin: 0px;
-            padding: 0px;
-            font-family: "Roboto", sans-serif;
-            &::-webkit-scrollbar{
-                display: none;
-            }
-        }
-        $bgColor : black;
+ * {
+     margin: 0px;
+     padding: 0px;
+     font-size: 1.3rem;
+     font-family: "Roboto", sans-serif;
+     &::-webkit-scrollbar{
+        display: none;
+     }
+ }
 
-        h2{
-            color: white;
-        }
+.chakra-stack{
+    font-size: .5rem;
+    padding: 5px;
+}
 
-        .header {
-            background-color: $bgColor;
-            height: 60px;
-            display: flex;
-            align-items: center;
-            box-sizing: border-box;
-            padding: .5rem;
-            justify-content: space-around;
+.chakra-text{
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
 
-            >img {
-                height: 70%;
-                margin-left: 10px;
-            }
-
-            >div {
-                width: 100%;
-                // border: 1px red solid;
-                margin-left: 2.5rem;
-
-                >a {
-                    color: white;
-                    text-decoration: none;
-                    margin: 1rem;
-                }
-            }
-
-            >svg {
-                color: white;
-                margin: 20px;
-                cursor: pointer;
-                font-size: 1.6rem;
-
-                &:hover {
-                    color: rgb(214, 209, 209);
-                }
-            }
-        }
-
-        .banner {
-            height: 460px;
-            background-color: $bgColor;
-            background-size: cover;
-            background-repeat:no-repeat;
-            display: flex;
-            flex-direction: column;
-            position: relative;
-            justify-content: space-evenly;
-            padding: 20px;
-            &::after{
-                content: "";
-                width:100%;
-                height: 100%;
-                top : 0%;
-                left : 0%;
-                position: absolute;
-                background-color: rgba(0, 0, 0, 0.447);
-            }
-
-            h1,p{
-                color: white;
-                width: 45%;
-                font-size: 2rem;
-                z-index: 5;
-            }
-            p{
-                font-size: 1rem;
-                letter-spacing: 1px;
-                word-spacing: 0.3rem;
-            }
-
-            >div{
-                display: flex;
-                
-            button{
-                padding : .6rem;
-                width: 120px;
-                // background-color: white !important;
-                outline: none;
-                border: none;
-                cursor: pointer;
-                z-index: 5;
-                border-radius: 5px;
-                margin: 10px;
-                font-weight: 500;
-                font-size: 1rem;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                transition: all 0.5s;                &:hover{
-                opacity: 0.8;
-                }
-                &:nth-child(odd){
-                    background-color: white;
-                    color: black;
-                }
-
-                &:nth-child(even){
-                    background-color: rgba(76,76,76);
-                    color: white;
-                }
-    
-            }
-
-            svg{
-                font-size: 1.7rem;
-            }
-            }
-
-        }
-
-
-        .row {
-            background-color: $bgColor;
-            padding: 0.6rem;
-
-            >h2 {
-                font-weight: 550;
-                font-size: medium;
-                word-spacing: 5px;
-            }
-
-            >div {
-                display: flex;
-                justify-content: space-evenly;
-                overflow-x: auto;
-            }
-        }
-
-        .card {
-            width: 160px;
-            height: 210px;
-            margin: 5px;
-            cursor: pointer;
-            transition: transform 0.5s;
-
-            &:hover {
-                transform: translateY(-10px) scale(1.04);
-            }
-        }
-
-        .genres{
-            display: flex;
-            background-color: black;
-            overflow-x: auto;
-            height: 50px;
-            >a{
-                color: black;
-                height : 40px;
-                text-decoration: none;
-                text-align: center;
-                justify-content: center;
-                align-items: center;
-                display: flex;
-                margin:  0 1rem;
-                min-width : 10rem;
-                background-color: white;
-                border-radius: 5px;
-                // transition: transform 0.5s;
-                
-                &:hover{
-                    background-color: rgba(255, 255, 255, 0.616);
-                }
-            }
-
-        }
+.chakra-avatar{
+    height: 20px !important;
+    width: 20px !important;
+    margin: 5px;
+}
